@@ -1,0 +1,4 @@
+
+vcom -reportprogress 300 -work work Y:/AES_128/Sources/Package_AES.vhd 
+
+vcom -reportprogress 300 -work work  Y:/AES_128/Testbench/Package_AES_tb.vhd 
