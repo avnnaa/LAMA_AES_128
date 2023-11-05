@@ -7,17 +7,17 @@
 #     |\_________\|_______|\|__|\|__|\|__|\|__|         \|__|        \|_______|\|_______|\|__| \|__|\|_______|\|__|\|__|\|__|\|__|    \|__|  \|__|\|_______|\|__| \|__|        \|_______|\|_______|\_________\       |\_________\|_______|\|_______|\_________\              \|_______|\|_______|\|_______|\_________\
 #      \|_________|                                                                                                                                                                                \|_________|       \|_________|                  \|_________|                                           \|_________|                                    
 																									  
-vcom -reportprogress 300 -work work Y:/AES_128/Sources/Package_Galois.vhd 
-vcom -reportprogress 300 -work work Y:/AES_128/Sources/KeyExpansion/Package_AES_KeyExpansion.vhd 
-vcom -reportprogress 300 -work work Y:/AES_128/Sources/KeyExpansion/Key_Expansion.vhd 
-vcom -reportprogress 300 -work work Y:/AES_128/Sources/KeyExpansion/rom_sbox.vhd 
-vcom -reportprogress 300 -work work Y:/AES_128/Sources/KeyExpansion/Top_Key_Expansion.vhd 
-vcom -reportprogress 300 -work work Y:/AES_128/Testbench/KeyExpansion_tb.vhd 
-vcom -reportprogress 300 -work work Y:/AES_128/Sources/Dechifrement/packagedechiffrement.vhd
-vcom -reportprogress 300 -work work Y:/AES_128/Sources/Dechifrement/rom_invsbox.vhd
-vcom -reportprogress 300 -work work Y:/AES_128/Sources/Dechifrement/dechiffrement_pipeline.vhd
-vcom -reportprogress 300 -work work Y:/AES_128/Sources/Dechifrement/Top_AES.vhd
-vcom -reportprogress 300 -work work Y:/AES_128/Testbench/Dechiffrement_tb.vhd
+vcom -reportprogress 300 -work work ./Sources/Package_Galois.vhd 
+vcom -reportprogress 300 -work work ./Sources/KeyExpansion/Package_AES_KeyExpansion.vhd 
+vcom -reportprogress 300 -work work ./Sources/KeyExpansion/Key_Expansion.vhd 
+vcom -reportprogress 300 -work work ./Sources/KeyExpansion/rom_sbox.vhd 
+vcom -reportprogress 300 -work work ./Sources/KeyExpansion/Top_Key_Expansion.vhd 
+vcom -reportprogress 300 -work work ./Testbench/KeyExpansion_tb.vhd 
+vcom -reportprogress 300 -work work ./Sources/Dechifrement/packagedechiffrement.vhd
+vcom -reportprogress 300 -work work ./Sources/Dechifrement/rom_invsbox.vhd
+vcom -reportprogress 300 -work work ./Sources/Dechifrement/dechiffrement_pipeline.vhd
+vcom -reportprogress 300 -work work ./Sources/Dechifrement/Top_AES.vhd
+vcom -reportprogress 300 -work work ./Testbench/Dechiffrement_tb.vhd
 
 vsim -gui work.Dechiffrement_tb
 
